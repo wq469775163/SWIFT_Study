@@ -61,10 +61,7 @@ Diction = [:]
 // 控制流
 /*
  1.使用if和switch来进行条件操作，使用for-in、for、while和repeat-while来进行循环。包裹条件和循环变量括号可以省略，但是语句体的大括号是必须的。在if语句中，条件必须是一个布尔表达式——这意味着像if score { ... }这样的代码将报错，而不会隐形地与 0 做对比。
- Swift 的 nil 和 Objective-C 中的 nil 并不一样。在 Objective-C 中，nil 是一个指向不存在对象的指针。在 Swift 中，nil 不是指针——它是一个确定的值，用来表示值缺失。
-    任何类型的可选状态都可以被设置为 nil，不只是对象类型。
-    如果你的代码中有常量或者变量需要处理值缺失的情况，请把它们声明成对应的可选类型。
-    nil不能用于非可选的常量和变量。
+ 
  
  var serverResponseCode: Int? = 404
  serverResponseCode 包含一个可选的 Int 值 404
@@ -705,6 +702,7 @@ func send(job: Int, toPriter prinerName: String) throws -> String
 
 do {
     try send(job: 22, toPriter: "Never Has Toner1")
+    print("jixuzou")
 } catch  {
     print(error)
 }
